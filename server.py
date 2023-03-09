@@ -96,7 +96,7 @@ class MyServer(BaseHTTPRequestHandler):
             else:
                 users.append(userData)
                 self.wfile.write(bytes("Welcome, " + userData["username"], "UTF-8"))
-                self.wfile.write(bytes("<a href=\"/login\">login</a>", "UTF-8"))
+                self.wfile.write(bytes("<a href=\"/login\">Logout</a>", "UTF-8"))
             
 
 
